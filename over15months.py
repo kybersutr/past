@@ -22,10 +22,6 @@ for file in os.listdir("./data"):
                     date = time.strptime(row[1], '%Y-%m-%d %H:%M:%S')
                     month = date.tm_mon
                     months[month - 1] += int(row[4])
-        print(file, total)
-
-print(months)
-print(sum(months))
 
 for i in range(12):
     months[i] = months[i]/18
@@ -40,3 +36,4 @@ plt.ylabel("Počet vypůjčených knih")
 plt.show()
 
 print(st.chisquare(months))
+# Power_divergenceResult(statistic=67934.19073756307, pvalue=0.0)

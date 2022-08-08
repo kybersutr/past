@@ -34,3 +34,4 @@ plt.ylabel("Průměrný počet vypůjčených knih")
 plt.show()
 
 print(st.chisquare(months))
+# Power_divergenceResult(statistic=19247.04923287041, pvalue=0.0)
